@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome CSN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Responsive Pop-Up -->
+    <section>
+        <div id="closepopup" class="bg-gray-900 text-white p-2 font-bold flex justify-center items-center gap-28 ">
+            <h2 class="text-xs md:text-2xl">Sign Up and GET 20% OFF for your first Order </h2>
+            <p id="close" class="cursor-pointer text-xs md:text-2xl">X</p>
+        </div>
+    </section>
+    <!-- Responsive Navbar -->
+    <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10 ">
+        <h1 class="text-2xl md:text-4xl font-bold ">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class=" gap-20 text-gray-600 font-semibold hidden md:flex">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">New Arival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Responsive Side Navbar -->
+    <section id="sidenavbar" class="bg-gray-900 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh;left:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class=" text-white inline cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10 text-center text-white font-semibold ">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">New Arival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+    <div class="bg-gray-50 max-w-screen-xl mx-auto">
+      <div class="grid lg:grid-cols-3 justify-center items-center gap-y-12">
+        <div class="lg:col-span-2 p-8 w-full max-w-2xl mx-auto">
+          <div>
+            <h2 class="text-3xl text-slate-900 font-bold">Contact us</h2>
+            <p class="text-[15px] text-slate-600 leading-relaxed mt-4">Have questions or need assistance? We're here to help! Reach out to our team for support, inquiries, or collaboration opportunities.</p>
+          </div>
+          <form class="mt-8">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class='text-sm text-slate-900 font-medium mb-2 block'>Name</label>
+                <input type='text' placeholder='Enter Name'
+                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+              </div>
+              <div>
+                <label class='text-sm text-slate-900 font-medium mb-2 block'>Email</label>
+                <input type='email' placeholder='Enter Email'
+                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+              </div>
+              <div>
+                <label class='text-sm text-slate-900 font-medium mb-2 block'>Phone No.</label>
+                <input type='number' placeholder='Enter Phone No.'
+                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+              </div>
+              <div>
+                <label class='text-sm text-slate-900 font-medium mb-2 block'>Subject</label>
+                <input type='text' placeholder='Enter Subject'
+                  class="w-full py-3 px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm outline-0 rounded-md" />
+              </div>
+              <div class="col-span-full">
+                <label class='text-sm text-slate-900 font-medium mb-2 block'>Message</label>
+                <textarea placeholder='Enter Message' rows="6"
+                  class="w-full px-4 text-slate-800 bg-white border border-gray-300 focus:border-slate-900 text-sm pt-3 outline-0 rounded-md"></textarea>
+              </div>
+            </div>
+            <button type='button'
+              class="text-white bg-slate-900 font-medium hover:bg-slate-800 tracking-wide text-sm px-4 py-3 w-full border-0 outline-0 rounded-md cursor-pointer mt-6">Send message</button>
+          </form>
+        </div>
+
+        <div class="relative lg:h-screen">
+          <img src="https://readymadeui.com/team-image.webp" alt="app-img"
+            class="w-full h-full object-cover object-top lg:absolute lg:right-0 lg:top-0 lg:bottom-0" />
+        </div>
+      </div>
+    </div>
+    <!-- Responsive Footer Section -->
+    <section class="bg-gray-900 mt-5 p-10 flex flex-col gap-5  ">
+        <h1 class="text-5xl font-bold text-white mt-4">Nostra</h1>
+        <p class="text-white mt-4 text-xl md:text-3xl">Discover the ultimate shopping experience with our e-commerce
+            platform!
+            Enjoy a wide range of products, unbeatable deals, and fast & free shipping on every order—delivered right to
+            your door.</p>
+        <div class="text-4xl  cursor-pointer mt-4">
+            <i class="fa-brands fa-pinterest" style="color: white;"></i>
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+            <i class="fa-brands fa-twitter" style="color: white;"></i>
+            <i class="fa-brands fa-instagram" style="color: white;"></i>
+        </div>
+
+        <p class="cursor-pointer text-white text-3xl mt-4">&copy; 2024 Nostra.com</p>
+
+    </section>
+
+    <!-- Link Javascript File -->
+    <script src="contact.js"></script>
+</body>
+
+</html>

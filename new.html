@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome CSN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Responsive Pop-Up -->
+    <section>
+        <div id="closepopup" class="bg-gray-900 text-white p-2 font-bold flex justify-center items-center gap-28 ">
+            <h2 class="text-xs md:text-2xl">Sign Up and GET 20% OFF for your first Order </h2>
+            <p id="close" class="cursor-pointer text-xs md:text-2xl">X</p>
+        </div>
+    </section>
+    <!-- Responsive Navbar -->
+    <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10 ">
+        <h1 class="text-2xl md:text-4xl font-bold ">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class=" gap-20 text-gray-600 font-semibold hidden md:flex">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">New Arival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Responsive Side Navbar -->
+    <section id="sidenavbar" class="bg-gray-900 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh;left:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class=" text-white inline cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10 text-center text-white font-semibold ">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#newarrival">New Arival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#mostwanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+
+<div class="bg-white p-4 mx-auto max-w-[1400px]">
+    <h2 class="text-xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8">Premium Threads</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-1.webp" alt="Product-1"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Crimson Luxe Gown – Elegant
+                        full-length dress</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$100.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-2.webp" alt="Product-2"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Emerald Draped Dress – Flowing
+                        cape-style gown</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$120.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-3.webp" alt="Product-3"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Minimalist Leather Tee Look – Modern
+                        streetwear</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$140.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-4.webp" alt="Product-4"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Urban Knit Style – Casual street look
+                        with hoodie</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$120.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-5.webp" alt="Product-5"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Bold Print Winter Set – Statement coat
+                        outfit</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$150.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-6.webp" alt="Product-6"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Floral Puff Sleeve Dress – Feminine
+                        and casual</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$140.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-7.webp" alt="Product-7"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Striped Tee & Blazer – Smart-casual
+                        streetwear</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$140.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden relative">
+            <a href="javascript:void(0)" class="block">
+                <div class="aspect-[3/4] bg-slate-100 w-full overflow-hidden">
+                    <img src="https://readymadeui.com/images/fashion-img-9.webp" alt="Product-8"
+                        class="w-full h-full object-cover object-top hover:scale-110 transition-all duration-700" />
+                </div>
+            </a>
+            <div class="p-4 relative">
+                <div class="flex flex-wrap justify-between gap-2 w-full absolute px-4 pt-3 z-10
+            transition-all duration-500
+            left-0 right-0
+            group-hover:bottom-20
+            lg:bottom-5 lg:opacity-0 lg:bg-white lg:group-hover:opacity-100
+            max-lg:bottom-20 max-lg:py-3 max-lg:bg-white/60">
+                    <button type="button" title="Add to wishlist"
+                        class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 64 64">
+                            <path
+                                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                    <button type="button" title="Add to cart" class="bg-transparent outline-0 border-0 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-slate-800 w-5 h-5 inline-block"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="z-20 relative bg-white">
+                    <h6 class="text-[15px] font-semibold text-slate-900 truncate">Tank Top & Denim – Everyday stylish
+                        look</h6>
+                    <h6 class="text-sm text-slate-600 font-medium mt-2">$140.00</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
